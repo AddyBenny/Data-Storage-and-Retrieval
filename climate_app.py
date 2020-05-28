@@ -4,7 +4,9 @@ import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
+
 import datetime as dt
+
 from flask import Flask, jsonify
 
 #################################################
@@ -12,9 +14,6 @@ from flask import Flask, jsonify
 #################################################
 engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 
-# Dictionary 
-#queryresults = [
- #   {key:prcp}
 
 Base = automap_base()
 Base.prepare(engine, reflect=True)
@@ -85,7 +84,6 @@ def enddate(start, end):
         querydates["max"]=max 
         querydates["avg"]=avg 
     return jsonify(querydates)
-
 
 if __name__ == "__main__":
     app.run(debug=True)
