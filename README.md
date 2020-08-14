@@ -16,7 +16,7 @@ Precipitation Analysis
 - Plot the results using the DataFrame plot method.
 - Used Pandas to print the summary statistics for the precipitation data.
 
-Station Analysis
+Station Analysis:
 - Designed a query to calculate the total number of stations.
 - Designed a query to find the most active stations.
 - List the stations and observation counts in descending order.
